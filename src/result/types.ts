@@ -3,9 +3,9 @@ export type Ok<T> = {
     value: T,
 };
 
-export type Err<E> = {
+export type Err<E extends Error> = {
     type: 'Err',
     error: E,
 };
 
-export type Result<T, E> = Ok<T> | Err<E>;
+export type Result<T, E extends Error> = Ok<T> | Err<E>;
