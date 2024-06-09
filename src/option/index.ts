@@ -1,11 +1,12 @@
 import { Option, Some, None } from "./types";
 
+export { Option, Some, None };
 export class Options {
-    static some<T>(value: T): Option<T> {
-        return { type: 'Some', value  };
+    static some<T>(value: T): Some<T> {
+        return { type: 'Some', value: value };
     }
 
-    static none(): Option<never> {
+    static none(): None {
         return { type: 'None' };
     }
 

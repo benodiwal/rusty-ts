@@ -1,11 +1,12 @@
 import { Result, Ok, Err } from "./types";
 
+export { Result, Ok, Err };
 export class Results {
-    static ok<T>(value: T): Result<T, never> {
+    static ok<T>(value: T): Ok<T> & Result<T, never> {
         return { type: 'Ok', value };
     }
 
-    static err<E extends Error>(error: E): Result<never, E> {
+    static err<E extends Error>(error: E): Err<E> & Result<never, E> {
         return { type: 'Err', error };
     }
 
