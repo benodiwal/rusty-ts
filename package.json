@@ -4,7 +4,8 @@
   "description": "A TypeScript library providing Rust-like Result and Option types for safer and more expressive error handling and optional values.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,10 @@
   ],
   "author": "benodiwal <sachinbeniwal0101@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/benodiwal/rusty-ts#readme"
+  "homepage": "https://github.com/benodiwal/rusty-ts#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  }
 }
