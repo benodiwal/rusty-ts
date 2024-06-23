@@ -2,7 +2,7 @@
 
 ## Checkout Package on NPM
 
-- https://github.com/benodiwal?tab=repositories
+- https://www.npmjs.com/package/@benodiwal/rusty-ts
 
 ## Installation  
 
